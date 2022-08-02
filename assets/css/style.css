@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --black: #222222;
+  --white: #ffffff;
+
+  --blue: #2c70ff;
+  --blue-dark: #122ab2;
+
+  --blue-light: #66d9eb;
+  --purple: #ae81ff;
+  --pink: #f9265e;
+
+  --gray-light: #f7f7f7;
+  --gray: #a4a4a4;
+  --gray2: #7c7c7c;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hr {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/*INFO*/
+.info-bg {
+  background: var(--blue-dark);
+}
+.info {
+  padding: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info p,
+.info a {
+  color: var(--white);
+}
+
+/*HEADER*/
+
+.header-bg {
+  background: var(--blue);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.menu li a {
+  color: var(--white);
+  padding: 10px;
+  font-size: 20px;
+}
+
+.main h1 {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.sobre {
+  display: flex;
+  gap: 2rem;
+}
+
+.sobre-content h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.sobre-content p {
+  font-size: 1.25em;
+  line-height: 1.4;
+  color: var(--gray2);
+}
+
+.sobre-content p + p {
+  margin-top: 1rem;
+}
